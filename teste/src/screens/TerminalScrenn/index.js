@@ -32,7 +32,6 @@ export default class TerminalScrenn extends Component {
     return (
       <View style={styles.container}>
         <ScrollView style={styles.containerScroll}>
-          {/* <Terminalmsg message={"Hello World"} sender={"192.168.0.4"} type={"TX"}/> */}
           { messages.map((message, index)=>
             <Terminalmsg key={index} message={message.msg} type={message.type}/>)}     
         
